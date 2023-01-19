@@ -10,7 +10,7 @@ let AddTodoForm =function(){
         </label>
             <input type="text" id="todoTitle" name="name" />
 
-        <button>Add</button>
+        <button type="submit"> Add</button>
         </form>  
         </div>
     )

@@ -1,10 +1,9 @@
 import React from "react"
 import TodoListItem from "./TodoListItem"
+import App from "./App"
 
 var todoList = [
-    { id: 1, title: "List.1" },
-    { id: 2, title: "List.2" },
-    { id: 3, title: "List.2" },
+    <App props="TodoList" />
 ]
 function TodoList() {
   return (

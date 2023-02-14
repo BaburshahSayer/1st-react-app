@@ -1,7 +1,7 @@
 import React from "react"
 import TodoListItem from "./TodoListItem"
 
-function TodoList(props) {
+export default function TodoList(props) {
 
   return (
     <ul>
@@ -9,3 +9,5 @@ function TodoList(props) {
         <TodoListItem todo={todo} />
       ))}
     </ul>
+  )
+}

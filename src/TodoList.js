@@ -5,14 +5,16 @@ import App from "./App"
 var todoList = [
     <App props="TodoList" />
 ]
-function TodoList() {
+
+function TodoList(todoList) {
   return (
     <ul>
-        {
-        todoList.map((todo) => (
+        {todoList.map((todo) => (
           <TodoListItem todo={todo} />
         ))
         }
     </ul>
   )
 }
+
+export default TodoList

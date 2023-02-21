@@ -1,15 +1,11 @@
 import React from "react"
 
-
-const todoTitle 
-
 function AddTodoForm(props) {
 
     function handleAddTodo(event) {
             event.preventDefault()
             let todoTitle = event.target.title.value
             event.target.title.value = ""
-            console.log(todoTitle)
             props.onAddTodo(todoTitle)
     }
     return (

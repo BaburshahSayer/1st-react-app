@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"
 import TodoList from "./TodoList"
 import AddTodoForm from "./AddTodoForm"
 
-function App() {
+function App() 
+{
   const initialTodolist = !JSON.parse(localStorage.getItem("savedTodoList")) ? [] : JSON.parse(localStorage.getItem("savedTodoList"))
   const [todoList, setTodoList] = useState([])
   const [isLoading, setIsLoading] = useState(true)
